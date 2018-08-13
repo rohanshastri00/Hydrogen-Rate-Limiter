@@ -1,0 +1,62 @@
+{
+  "status": "ok",
+  "res_type": "time_series",
+  "from_date": 1532548219000,
+  "series": [
+    {
+      "end": 1532548360000,
+      "attributes": {},
+      "metric": "solr.search_handler.p95",
+      "interval": 1,
+      "start": 1532548220000,
+      "length": 15,
+      "query_index": 0,
+      "aggr": null,
+      "scope": "*",
+      "pointlist": [
+        [
+          1532548310000,
+          69.768534165472019
+        ],
+        [
+          1532548320000,
+          69.764597134955935
+        ],
+        [
+          1532548330000,
+          69.783854565791174
+        ],
+        [
+          1532548340000,
+          69.773128534534152
+        ],
+        [
+          1532548350000,
+          69.773698740027925
+        ],
+        [
+          1532548360000,
+          69.777879360084711
+        ]
+      ],
+      "expression": "solr.search_handler.p95{*}",
+      "unit": [
+        {
+          "family": "time",
+          "scale_factor": 0.001,
+          "name": "millisecond",
+          "short_name": "ms",
+          "plural": "milliseconds",
+          "id": 10
+        },
+        null
+      ],
+      "display_name": "solr.search_handler.p95"
+    }
+  ],
+  "to_date": 1532548372000,
+  "resp_version": 1,
+  "query": "solr.search_handler.p95{*}",
+  "message": "",
+  "group_by": []
+}

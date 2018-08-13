@@ -1,0 +1,14 @@
+- query: 'solr.search_handler.p95{*}'
+  threshold:
+    good:
+      high: 100
+      low: 0
+    medium:
+      high: 250
+      low: 101
+    bad:
+      high: 2000
+      low: 251
+  unit: 'ms'
+  provider: 'datadog'
+  minsAgo: 5.0

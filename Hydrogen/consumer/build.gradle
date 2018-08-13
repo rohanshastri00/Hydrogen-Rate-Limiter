@@ -1,0 +1,21 @@
+group 'hydrogen'
+
+jar {
+  archiveName = 'Consumer.jar'
+  manifest {
+    attributes(
+      'Class-Path': configurations.compile.collect { it.getName() }.join(' '),
+      'Main-Class': 'com.nordstrom.hydrogen.consumer.Application'
+    )
+  }
+}
+
+repositories {
+  maven {
+    url "https://mvnrepo.nordstrom.net/nexus/content/groups/public"
+  }
+  maven {
+    url "http://maven.snplow.com/releases"
+  }
+  jcenter()
+}

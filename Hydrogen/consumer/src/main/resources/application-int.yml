@@ -1,0 +1,10 @@
+spring.profiles: int
+
+ratelimiter:
+  msSolrRecoverIngestionDelay: 180000
+  rateMapping:
+    ACTIVE: 5.0
+    DOWN: 0.033
+    HAS_UNHEALTHY_NODES: 0.033
+    DEPLOYING: 0.033
+    DEFAULT: 1.0
